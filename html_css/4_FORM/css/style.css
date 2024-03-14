@@ -1,0 +1,19 @@
+body{
+    padding-bottom: 500px;
+    background-color: #f0f0f0;
+}
+
+div{
+    margin-bottom: 10px;
+}
+
+div input,
+div label{
+    display: block;
+}
+
+.radio label,
+.radio input,
+.radio spn{
+    display: inline-block;
+}

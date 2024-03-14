@@ -1,0 +1,18 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px;
+    font-size: 20px;
+    color: rgb(196, 47, 255);
+    border: 3px solid;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(41, 12, 68);
+    box-shadow: 6px 8px 12px 3px black;
+}

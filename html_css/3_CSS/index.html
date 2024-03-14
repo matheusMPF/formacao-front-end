@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+        <!-- Aula 38: Internal CSS -->
+        <style>
+            p{
+                /* color: rgb(164, 167, 0); */
+                font-size: 20px;
+            }
+        </style>
+
+                <!-- Aula 39: External CSS -->
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="list.css">
+</head>
+<body>
+    <!-- Aula 36: Inline CSS -->
+    <h1 style="color: blue;">Mudar cor com Inline</h1>
+    <h1 style="color: red;">Outra cor</h1>
+
+    <!-- Aula 37: Mútiplas regras no CSS -->
+    <h1 style="color: purple; font-size: 50px; border-bottom: 1px solid red;">Mudar cor e tamanho da fonte</h1>
+
+        <!-- Aula 38: Internal CSS -->
+        <p>Eu fui estilizado pelo internal</p>
+        <p>Mais um</p>
+        <p>Mais outro</p>
+
+        <!-- Aula 86: Position Sticky -->
+        <div class="sticky">
+            <span>Eu sou um Sticky</span>
+        </div>
+
+        <!-- Aula 39: External CSS -->
+        <h3>Meu título estilizado pelo external</h3>
+
+        <!-- Aula 40: Ordem do CSS - Inline > Interanal = External-->
+        <p style="color: red;">Ordem do CSS</p>
+        <p>Ordem do CSS</p>
+
+        <!-- Aula 41: Mútiplos Arquivos de CSS -->
+        <ul>
+            <li>Banana</li>
+            <li>Maça</li>
+            <li>Abacate</li>
+        </ul>
+
+        <!-- Aula 44: Classes -->
+        <p class="paragraph">Testando</p>
+        <p class="paragraph">Estilo</p>
+        <p class="paragraph">Por classes</p>
+
+        <!-- Aula 45: Id's -->
+        <h1 id="exclusive-title">Testando estilo por ID</h1>
+
+        <!-- Aula  46: ordem das regras CSS -->
+        <h2 id="algum-titulo" class="titulo">Algum texto 1</h2>
+        <h2 class="titulo">Algum texto 1</h2>
+        <h2>Algum texto 1</h2>
+        
+        <!-- Aula 48: Nome das cores -->
+        <p class="color-name">Cores</p>
+
+        <!-- Aula 49: HEX -->
+        <p class="hex">Parágrafo com HEX</p>
+        <p class="hex-2">Parágrafo com HEX</p>
+
+        <!-- Aula 50: Aprofundando em HEX-->
+        <p class="simple">HEX simplificado</p>
+        <p class="simple-2">HEX simplificado 2</p>
+
+        <!-- Aula 51: RGB -->
+        <p class="rgb">Este foi estilizado com RGB</p>
+        <p class="mixed-rgb">Este foi estilizado com RGB</p>
+
+        <!-- Aula 52: RGBa -->
+        <p class="rgba">Estilização com RGBa</p>
+
+        <!-- Aula 54: Background-color -->
+        <p class="bg">Mudando o Background</p>
+        <p class="bg-2">Mudando o Background 2</p>
+
+        <!-- Aula 55: Background com opacity -->
+        <div class="bg-opacity">
+            <p>Estou aqui</p>
+        </div>
+
+        <div class="bg-opacity-2">
+            <p>Estou aqui quase visível</p>
+        </div>
+
+        <!-- Aula 56: RBA com Opacity -->
+        <div class="rgba-opacity">Este título está visível</div>
+
+        <!--Aula 57: Background images -->
+        <h1 class="bg-img">Aqui tem uma imagem em Background</h1>
+        
+        <!-- Aula 58: Centralizando Background -->
+        <div class="not-centered-bg"></div>
+        <div class="centered-bg"></div>
+
+        <!-- Aula 60: Largura e Altura -->
+        <div class="height-width"></div>
+        <div class="height-width-2"></div>
+
+        <!-- Aula 61: Padding -->
+        <div class="without-padding">Este não tem Padding</div>
+        <div class="padding">Este tem Padding</div>
+
+        <!-- Aula 62: Padding individual -->
+
+        <p class="padding-individual">Este elemento tem paddings diferentes</p>
+
+        <!-- Aula 63: Shorthand properties -->
+        <p class="shorthand-padding">Algum texto</p>
+        <p class="shorthand-padding-2">Outro testo</p>
+
+        <!-- Aula 64: Padding com width -->
+        <div class="without-border-box">Algum conteúdo</div>
+        <div class="border-box">Algum conteúdo 2</div>
+
+        <!-- Aula 65: Border -->
+        <div class="border">Borda</div>
+        <div class="border-2">Borda 2</div>
+
+        <!-- Aula 66: Borda individual -->
+        <p class="border-left">Borda na esquerda</p>
+        <p class="border-bottom">Borda inferior</p>
+
+        <!-- Aula 67: Borde-Radius -->
+        <div class="rounded-p">Eu estou arredondado</div>
+        <div class="rounded-p-2">Eu estou arredondado 2</div>
+
+        <!-- Aula 68: Margin -->
+        <div class="margin">Eu tenho margem</div>
+        <div class="margin-top">Eu tenho margem no top</div>
+        <div class="margin-shorthand">Eu tenho margem shorthand</div>
+
+        <!-- Aula 69: Unidindo elementos Box model  -->
+        <div class="box-model"><p>Tenho todas as propriedades de um box model</p></div>
+
+        <!-- Aula 70: Alinhamento de texto -->
+        <p class="text-aligned">Alinhado a direita</p>
+        <div class="container-center">
+            <h2>Nós estamos alinhados ao centro</h2>
+            <p>we are aligned to the center</p>
+        </div>
+
+        <!-- Aula 71: Decoração de texto -->
+        <p class="underline">Eu tenho um underline</p>
+        <p class="line-through">Eu tenho um risco</p>
+        <a href="#" class="remove-underline">Sem underline</a>
+
+        <!-- Aula 72: Text Transform -->
+        <p class="upper">este texto é em caixa alta</p>
+        <p class="lower">ESTE É EM CAIXA BAIXA</p>
+        <!-- Sempre buscar utilizar o Upper ou Lower case para padronizar as caixas, evitar por no HTML diretamente. -->
+
+        <!-- Aula 73: Espaçamento de letras -->
+        <h2 class="spacing">Eu tenho um espaçamento maior</h2>
+
+        <!-- Aula 74: Fontes -->
+        <p class="serif">Serif fonte</p>
+        <p class="sans-serif">Sans Serif Fonte</p>
+        <p class="monospace">Monospace fonte</p>
+        <p class="cursive">Cursive fonte</p>
+        <p class="fantasy">Fantasy fonte</p>
+
+        <!-- Aula 75: Estilo de fonte -->
+        <p class="italic">Eu estou em itálico</p>
+        <p class="oblique">Eu estou em oblíquo</p>
+
+        <!-- Aula 76: Font Weight -->
+        <p class="thin">Sou mais fino</p>
+        <p class="bold">Eu estou em bold</p>
+        <p class="bolder">Eu sou a maior fonte</p>
+
+        <!-- Aula 77: Font Size -->
+        <h4 class="small">Título Pequeno</h4>
+        <h4 class="big">Título Grande</h4>
+
+        <!-- Aula 78: Display -->
+
+        <div class="inline-box">a</div>
+        <div class="inline-box">b</div>
+        <div class="inline-box">c</div>
+
+        <span class="block">1</span>
+        <span class="block">2</span>
+
+        <!-- Aula 79: Escondendo o elemento -->
+        <p class="invisible">Me encontre se puder</p>
+
+        <!-- Aula 81: Position Static -->
+        <div class="static">
+            <span>Eu sou estático</span>
+        </div>
+
+        <!-- Aula 82: Position Relative -->
+        <div class="relative">
+            <span>Eu sou relative</span>
+        </div>
+        <p>Não usamos muito o Position: relative para mover os elementos</p>
+
+        <!-- Aula 83: Position Absolute -->
+        <div class="absolute">
+            <span>Eu sou absolute</span>
+        </div>
+        <p>Eu sou um paragráfo</p>
+
+        <!-- Aula 84: Relative + Absolute -->
+        <div class="relative-container">
+            <div class="absolute-1"></div>
+            <div class="absolute-2"></div>
+        </div>
+
+        <!-- Aula 85: Position Fixed -->
+        <div class="fixed">
+            <span>Fixed</span>
+        </div>
+
+        <!-- Aula 87: Z-index -->
+        <div class="relative-container">
+            <div class="absolute-3"></div>
+            <div class="absolute-4"></div>
+            <div class="absolute-5"></div>
+        </div>
+
+</body>
+</html>

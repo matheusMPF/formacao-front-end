@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <!-- Aula 98: Formulários -->
+    <h2>Formulários HTML</h2>
+    <!-- Aula 99: Atributos da Tag Form -->
+    <form action="register.php" method="get">
+        <div>
+            <label>Nome</label>
+            <input type="text">
+        </div>
+
+        <!-- Aula 100: Atributo name -->
+        <div>
+            <!-- Aula 101: Atributo Label -->
+            <label for="age">Idade</label>
+            <!-- Essa label está atrelada ao input, por meio dos atributos for e name -->
+            <input type="text" name="age">
+        </div>
+        <!-- Aula 103: Select -->
+        <div>
+            <label for="job">Selecione a sua profissão:</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester/QA</option>
+                <option value="devops">DevOps</option>
+            </select>
+        </div>
+        <!-- Aula 104: Atributo selected -->
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim">Sim</option>
+                <option value="nao" selected>Não</option>
+            </select>
+        </div>
+        <!-- Aula 105: Múltiplas seleções -->
+        <div>
+            <label for="items">Selecione os itens desejados:</label>
+            <select name="items" multiple>
+                <option value="feijao">Feijão</option>
+                <option value="arroz">Arroz</option>
+                <option value="macarrao">Macarrão</option>
+                <option value="galinha">Galinha</option>
+                <option value="bife">Bife</option>
+            </select>
+        </div>
+
+        <!-- Aula 106: Campo Textarea -->
+        <div>
+            <label for="comment">Escreva abaixo o que você acho do post:</label>
+            <textarea name="comment"></textarea>
+        </div>
+
+        <!-- Aula 107: Fieldset e legend -->
+        <div>
+            <fieldset>
+                <legend>Preencha as suas informações</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+
+        <!-- Aula 108: Datalist -->
+        <div>
+            <label for="flavor">Escolha o sabor:</label>
+            <input type="text" list="flavors" name="flavor">
+
+            <datalist id="flavors">
+                <option value="Morango">Morango</option>
+                <option value="Cereja">Cereja</option>
+                <option value="Abacaxi">Abacaxi</option>
+                <option value="Chocolate">Chocolate</option>
+
+            </datalist>
+        </div>
+        <!-- Aula 109: Input de senha -->
+        <div>
+            <label for="password">Digite a sua senha:</label>
+            <input type="password" name="password">
+        </div>
+
+        <!-- aula 111: Input radio-->
+        <div>
+            <label for="car_model">
+                Esolha o modelo do seu carro:
+            </label>
+
+            <div class="radio">
+                <input type="radio" value="bmw" name="car_model">
+                <label for="car_model">BMW</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="ferrari" name="car_model">
+                <label for="car_model">Ferrari</label>
+            </div>
+            <div class="radio">
+                <input type="radio" value="renault" name="car_model">
+                <label for="car_model">Renault</label>
+            </div>
+        </div>
+
+        <!-- Aula 112: Checkbox -->
+        <div>
+            <label for="optional">Opicionais do carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optional[]" value="big_tires">
+                <label for="big_tires">Pneus Grandes</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optional[]" value="turbo_engine">
+                <label for="turbo_engine">Motor turbo</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optional[]" value="hybrid">
+                <label for="hybrid">Hibrído</label>
+            </div>
+        </div>
+
+        <!-- Aula 113: Input de Data -->
+        <div>
+            <label for="birthday">Data de nascimento:</label>
+            <input type="date" name="birthday">
+        </div>
+
+        <!-- Aula 114: Input para enviar arquivos -->
+        <div>
+            <label for="image">Insira a sua imagem:</label>
+            <input type="file" name="image">
+        </div>
+
+        <!-- Aula 115: Input para números -->
+        <div>
+            <label for="number">Escolha um número:</label>
+            <input type="number" name="number">
+        </div>
+
+        <!-- Aula 116: Input para e-mails -->
+        <div>
+            <label for="email">Informe o seu e-mail:</label>
+            <input type="email" name="email">
+        </div>
+
+        <!-- Aula 117: Atributo Value -->
+        <div>
+            <label for="value">Digite algum valor</label>
+            <input type="text" value="O meu valor é este 2">
+        </div>
+
+        <!-- Aula 118: Atributo disabled -->
+        <div>
+            <p>tente mudar o valor:</p>
+            <input type="text" disabled value="Não precisa Preencher">
+        </div>
+
+        <!-- Aula 119: Placeholder -->
+        <div>
+            <label for="current-job">Digite a sua profissão:</label>
+            <input type="text" placeholder="Desenvolvedor web*">
+        </div>
+
+        <!-- Aula 120: Atributo Required -->
+        <div>
+            <label for="birthyear">Ano nascimento:</label>
+            <input type="text" placeholder="Digite o ano do seu nascimento" required> 
+        </div>
+
+        <!-- Aula 110: Reiniciando formulários -->
+        <input type="reset" value="Limpar">
+        <!-- Aula 102: Enviando Form -->
+        <input type="submit" value="Enviar">
+    </form>
+
+
+
+</body>
+
+</html>

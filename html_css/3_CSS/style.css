@@ -1,0 +1,484 @@
+/* Aula 39: External CSS */
+body{
+    padding-bottom: 500px;
+}
+
+h3{
+    color: #0d9275;
+}
+
+/* Aula 42: Comentários no CSS */
+
+.paragraph{
+    background-color: black;
+    color: aqua;
+    padding: 20px;
+}
+
+#exclusive-title{
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
+
+/* Aula 46: Ordem das regras */
+
+h2{
+    border-bottom: 2px solid red;
+}
+
+#algum-titulo{
+    border-bottom: 2px solid green;
+}
+
+.titulo{
+    border-bottom: 2px solid blue;
+}
+
+/* Aula 49: Nome das cores */
+.color-name{
+
+    color: crimson;
+}
+
+/* Aula 49: HEX */
+.hex{
+    color: #55a398;
+}
+
+.hex-2{
+    color: #000cb8;
+}
+
+/* Auala 50: Se aprofundando em HEX */
+.simple{
+    color: #333;
+}
+
+.simple-2{
+    color: #a5f;
+}
+
+/* Aula 51: RGB */
+.rgb{
+    color: rgb(255, 0, 0);
+}
+
+.mixed-rgb{
+    color: rgb(199, 21, 47);
+}
+
+/* Aula 52: RGBa */
+.rgba{
+    color: rgba(100, 99, 45, 0.3);
+}
+
+/* Aula 54: Background-color */
+.bg{
+    background-color: #000;
+    color: yellow;
+}
+
+.bg-2{
+    background-color: rgb(200, 20, 41);
+    color: #00eaff;
+}
+
+/* Aula 55: Background com opacity */
+.bg-opacity{
+    background-color: green;
+    opacity: .2;
+}
+
+.bg-opacity-2{
+    background-color: #999;
+    color: #000;
+    opacity: .8;
+}
+
+/* Aula 56: RBA com Opacity */
+.rgba-opacity{
+    background-color: rgba(90, 120, 20, 0.2);
+    color: #000;
+}
+
+/* Aula 57: Background images */
+.bg-img{
+    background-image: url("./img/nature.jpg");
+    color: #fff;
+    padding: 20px;
+}
+
+/* Aula 58: Centralizando Background */
+.not-centered-bg,
+.centered-bg{
+    height: 400px;
+    width: 400px;
+    background-image: url("img/bridge.jpg");
+}
+
+.centered-bg{
+    background-position: center;
+    background-size: cover;
+}
+
+/* Aula 60: Largura e Altura */
+.height-width{
+    height: 200px;
+    width: 100px;
+    background-color: #ff0000;
+}
+
+.height-width-2{
+    height: 200px;
+    background-color: #3f3f3f;
+}
+
+/* Aula 61: Padding */
+.without-padding,
+.padding{
+    background-color: #000000;
+    color: #fff;
+
+}
+
+.padding{
+    background-color: #111;
+    padding: 20px;
+}
+
+/* Aula 62: Padding individual */
+.padding-individual{
+    background-color: #222;
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-right: 5px;
+}
+
+/* Aula 63: Shorthand properties */
+.shorthand-padding{
+    background-color: #444;
+    /* Top rigth Bottom left */
+    padding: 6px 12px 18px 24px;
+}
+
+.shorthand-padding-2{
+    background-color: #555;
+    /* Top and Bottom, Rigth and Left */
+    padding: 10px 20px;
+}
+
+/* Aula 64: Padding com width */
+.without-border-box{
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box{
+    background-color: #000000;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Aula 65: Border */
+.border{
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.border-2{
+    border: 2px dotted #933;
+    padding: 30px;
+}
+
+/* Aula 66: Bordas individuais */
+.border-left{
+    border-left: 5px solid #009cc4;
+    background-color: #222;
+    padding: 25px;
+    color: #fff
+}
+.border-bottom{
+    border: 5px double red;
+    background-color: #222;
+    padding: 20px;
+    color: #fff;
+
+}
+
+/* Aula 67: Border-Radius */
+.rounded-p{
+    border: 4px solid blue;
+    background-color: #000;
+    color: wheat;
+    padding: 15px;
+    border-radius: 15px;
+}
+.rounded-p-2{
+    background-color: #575757;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Aula 68: Margin */
+.margin{
+    margin: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.margin-top{
+    margin-top: 50px;
+    background-color: #444;
+    padding: 10px;
+    color: white;
+}
+
+.margin-shorthand{
+    background-color: #00eaff;
+    margin: 30px 10px 15px 20px;
+}
+
+/* Aula 69: Unidindo elementos Box model */
+.box-model{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #333;
+    border-radius: 15px;
+    width: 300px;
+    height: 75px;
+}
+
+/* Aula 70: Alinhamento de texto */
+.text-aligned{
+    text-align: right;
+}
+
+.container-center{
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+/* Aula 71: Decoração de texto */
+.underline{
+    text-decoration: underline;
+}
+
+.line-through{
+    text-decoration: line-through;
+}
+
+.remove-underline{
+    text-decoration: none;
+    color: #00eaff;
+}
+
+/* Aula 72: Text Transform */
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+/* Aula 73: Espaçamento de letras */
+.spacing{
+    letter-spacing: 5px;
+}
+
+/* Aula 74: Fontes */
+.serif{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sans-serif{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.moospace{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+/* Aula 75: Estilo de fonte */
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+/* Aula 76: Font Weight */
+.thin,
+.bold,
+.bolder{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thin{
+    font-weight: 100;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.bolder{
+
+    font-weight: 900;
+}
+
+/* Aula 77: Font Size */
+.small{
+    font-size: 10px;
+}
+
+.big{
+    font-size: 50px;
+}
+
+/* Aula 78: Display */
+.inline-box{
+    width: 250px;
+    height: 50px;
+    background-color: #4f8;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block{
+    background-color: #333;
+    display: block;
+    margin: 10px;
+    color: #fff;
+    padding: 5px;
+}
+
+/* Aula 79: Escondendo elementos */
+.invisible{
+    display: none;
+}
+
+/* Aula 81: Position Static */
+.static{
+    position: static;
+    background-color: #4f8;
+    width: 100px;
+    height: 100px;
+}
+
+/* Aula 82: Position Relative */
+.relative{
+    position: relative;
+    background-color: #160064;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 100px;
+}
+
+/* Aula 83: Position Absolute */
+.absolute{
+    position: absolute;
+    background-color: #059700;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+/* Aula 84: Relative + Absolute */
+.relative-container{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-1,
+.absolute-2{
+    width: 50px;
+    height: 50px;
+    background-color: #059700;
+    position: absolute;
+}
+
+.absolute-1{
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-2{
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Aula 85: Position Fixed */
+.fixed{
+    width: 100px;
+    height: 100px;
+    background-color: #851;
+    border: #000cb8;
+    position: fixed;
+    top: 50px;
+    right: 100px;
+}
+
+/* Aula 86: Position Sticky */
+.sticky{
+    width: 100px;
+    height: 100px;
+    background-color: #da0000;
+    border: #00ffff;
+    position: sticky;
+    top: 40px;
+}
+
+/* Aula 87: Z-index */
+.absolute-3,
+.absolute-4,
+.absolute-5{
+    width: 50px;
+    height: 50px;
+    background-color: #0d00bd;
+    position: absolute;
+}
+
+.absolute-3{
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.absolute-4{
+    top: 10px;
+    left: 10px;
+    background-color: #009cc4;
+    z-index: 2;
+}
+
+.absolute-5{
+    top: 50px;
+    left: 50px;
+    background-color: #00eaff;
+}

@@ -1,0 +1,12 @@
+#btn{
+    background-color: #00456d;
+    outline: 10px;
+    border: 5px solid #cf00e2;
+    padding: 10px 30px;
+    margin: 20px 50px;
+    outline: 5px solid #000000;
+}
+
+.txt{
+    color: #cf00e2;
+}

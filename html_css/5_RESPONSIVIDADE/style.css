@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.change-color{
+    max-width: 100%;
+    padding: 30px;
+    background-color: #ff0000;
+}
+
+.title-color{
+    color: #ffffff;
+}
+
+/* Aula 133: Media Query */
+@media screen and (max-width: 600px) {
+    .change-color{
+        background-color: #0000ff;
+    }
+
+    .title-color{
+        color: #3cff00;
+    }
+}
+
+/* Aula 134: Min-width */
+@media screen and (min-width: 900px) {
+    .change-color{
+        background-color: #3cff00;
+    }
+
+    .title-color{
+        color: #0000ff;
+    }
+}
+
+/* Aula 135: Brakpoints */
+
+/* 
+
+Breakpoints padrões:
+
+- 600px ou abaixo: Celular
+- 768px até 600px: Tablets
+- 992px até 768px: Mini laptops
+- Acima de 992px: Laptops e Desktops
+
+*/
+
+ /* Aula 136: Landscape */
+ h3{
+    display: none;
+ }
+
+ @media screen and (orientation: landscape) {
+    h3{
+        display: block;
+    }
+    
+ }
